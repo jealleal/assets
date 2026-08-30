@@ -134,4 +134,11 @@ task.spawn(function()
 end)
 
 print("init script loaded")
+local sg = game:GetService(""StarterGui"")
+sg:SetCore(""SendNotification"", {
+    Title = ""KaliExecutor"",
+    Text = ""Successfully Attached!"",
+    Icon = ""rbxassetid://73623727799655"",
+    Duration = 9
+})
 return {HideTemp = function() end, GetIs = function() end}
